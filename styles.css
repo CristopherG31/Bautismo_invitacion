@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e2e180, #dcdcdc);
+    margin: 0;
+    padding: 0;
+}
+
+.invitation-container {
+    width: 90%;
+    max-width: 700px;
+    margin: 2em auto;
+    padding: 2em;
+    border: 1px solid #b8b8b8;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.invitation-header {
+    text-align: center;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #dcdcdc;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+.invitation-header h1 {
+    margin: 0;
+    color: #d4af37; /* Color dorado */
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5em;
+}
+
+.invitation-content {
+    text-align: center;
+    padding: 1em;
+    font-family: 'Josefin Slab', serif;
+}
+
+.invitation-content h2 {
+    margin: 0;
+    color: #333333;
+    font-size: 1.5em;
+    font-family: 'Great Vibes', cursive;
+}
+
+.invitation-content p {
+    line-height: 1.6;
+    color: #666666;
+}
+
+.when-where {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0;
+    padding: 1em;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-family: 'Lifesavers', cursive;
+}
+
+.when, .where {
+    width: 48%;
+}
+
+.when h2, .where h2 {
+    margin-top: 0;
+    color: #333333;
+    font-size: 1.3em;
+    font-family: 'Great Vibes', cursive;
+}
+
+.when p, .where p {
+    margin: 0.5em 0;
+}
+
+.invitation-carousel {
+    text-align: center;
+    padding: 1em;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+.favorite-people {
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+    background: #fff5e6; /* Fondo suave para destacar la sección */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Josefin Slab', serif;
+}
+
+.favorite-people h2 {
+    color: #d4af37; /* Manteniendo el color dorado */
+    font-size: 1.8em;
+    font-family: 'Great Vibes', cursive;
+    margin-bottom: 0.5em;
+}
+
+.favorite-people p {
+    color: #666666;
+    font-size: 1em;
+    line-height: 1.6;
+}
+.asistencia p{
+    color: #d4af37; /* Manteniendo el color dorado */
+    font-size: 1.8em;
+    font-family: 'Great Vibes', cursive;
+    margin-bottom: 0.5em;
+
+
+}
+.carousel-images img {
+    width: 100%;
+    flex: 1 0 100%;
+}
+
+.invitation-footer {
+    text-align: center;
+    padding-top: 1em;
+    border-top: 2px solid #dcdcdc;
+    font-family: 'Josefin Slab', serif;
+}
+
+.invitation-footer p {
+    margin: 0;
+    color: #333333;
+}
+
+/* Consultas de medios para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .invitation-header h1 {
+        font-size: 2em;
+    }
+
+    .invitation-content h2 {
+        font-size: 1.3em;
+    }
+
+    .when-where {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .when, .where {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .details {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .invitation-container {
+        width: 95%;
+        padding: 1em;
+    }
+
+    .invitation-header h1 {
+        font-size: 1.5em;
+    }
+
+    .invitation-content h2 {
+        font-size: 1.2em;
+    }
+
+    .when-where {
+        flex-direction: column;
+    }
+
+    .when, .where {
+        width: 100%;
+    }
+
+    .details {
+        font-size: 0.8em;
+    }
+}

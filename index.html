@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Bautismo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lifesavers&family=Josefin+Slab:wght@400;700&display=swap">
+</head>
+
+<body>
+    <div class="invitation-container">
+        <div class="invitation-header">
+            <h1>Invitación Especial</h1>
+        </div>
+        <div class="invitation-content">
+            <h2>¡Celebremos Juntos!</h2>
+            <p>Te invitamos a ser parte de la celebración del bautismo de nuestro querido [Nombre del Bautizado]. Tu
+                presencia hará este momento aún más especial.</p>
+        </div>
+        <div class="when-where">
+            <div class="when">
+                <h2>Cuándo</h2>
+                <p><strong>Fecha:</strong> 26 de Agosto de 2024</p>
+                <p><strong>Hora:</strong> 12 p.m.</p>
+            </div>
+            <div class="where">
+                <h2>Dónde</h2>
+                <p><strong>Lugar de la misa:</strong> Parroquia San Onofre</p>
+                <p><strong>Lugar del evento:</strong> Puerto del Carmen 2737 C "El Sindicato" Col. La Esperanza</p>
+            </div>
+        </div>
+        <div class="invitation-carousel">
+            <h2>Galería de Momentos</h2>
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="img1.jpeg" alt="Foto 1">
+                    <img src="img2.jpeg" alt="Foto 2">
+                    <img src="img3.jpeg" alt="Foto 3">
+                    <img src="img4.jpeg" alt="Foto 4">
+                    <img src="img5.jpeg" alt="Foto 5">
+                    <img src="img6.jpeg" alt="Foto 6">
+                </div>
+            </div>
+        </div>
+        <div class="invitation-footer">
+            <p>Con afecto, Familia Mora Mendoza</p>
+        </div>
+        <div class="favorite-people">
+            <h2>Mis Personas Favoritas</h2>
+            <p>¡Gracias por acompañarme en este día tan especial!</p>
+            <p>Papas:Viviana Monserrat Mendoza Esparza
+                Alan Ivan Mora Haro</p>
+            <p>Padrinos:Zinedine Francisco Zaid Mendoza Esparza
+                Madrina: Silvia Danae Mora Haro</p>
+
+
+        </div>
+        <div class="asistencia">
+            <p>Número de asistencia: 3317488861/ 3318195053</p>
+        </div>
+        <footer>¿Quieres una invitacion para tu evento</footer>
+        <link>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const carousel = document.querySelector('.carousel-images');
+        let index = 0;
+
+        function showNextImage() {
+            index = (index + 1) % 6; // 6 es el número de imágenes
+            carousel.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        setInterval(showNextImage, 3000); // Cambia la imagen cada 3 segundos
+    });
+</script>
+
+</body>
+
+</html>
