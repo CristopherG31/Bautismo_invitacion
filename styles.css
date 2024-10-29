@@ -84,8 +84,13 @@
     border-radius: 5px;
     margin: 20px 0;
     display: inline-block;
+    font-size: 6vh;
 }
-
+button:hover{
+    transform: scale(1.05);
+    color: rgb(34, 86, 37);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
 .foot {
     display: flex;
     justify-content: center;
