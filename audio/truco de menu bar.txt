@@ -1,0 +1,90 @@
+.navbar {
+    display: flex; /* Usa flexbox para alinear elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    background-color: #f8f8f8; /* Color de fondo de la barra */
+    padding: 10px; /* Espacio interno */
+}
+
+.logo {
+    width: 50px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción */
+    margin-right: 15px; /* Espacio entre la imagen y el texto */
+}
+<header class="navbar">
+        <img src="./imagenes/quincieañera.jpg" alt="Descripción de la imagen" class="logo">
+   
+    </header>
+       <!-- <div class="snowflake">❄️</div>
+        <div class="snowflake">❄️</div>
+        <div class="snowflake">❄️</div>
+        <div class="snowflake">❄️</div>
+        <div class="snowflake">❄️</div> -->
+        <!-- Lista para "Misa" -->
+        <!-- <script>
+            // Función para crear un copo de nieve y agregarlo al contenedor de nieve
+            function createSnowflake() {
+                const snowflake = document.createElement("div");
+                snowflake.classList.add("snowflake");
+                snowflake.textContent = "❄️";
+    
+                // Posición y estilo aleatorios para el copo
+                snowflake.style.left = Math.random() * 100 + "vw";
+                snowflake.style.animationDuration = (Math.random() * 2 + 4) + "s";
+                snowflake.style.fontSize = (Math.random() * 1.5 + 0.5) + "em";
+    
+                // Añadir copo al contenedor de nieve
+                document.getElementById("snow-container").appendChild(snowflake);
+    
+                // Elimina el copo de nieve cuando termina la animación
+                snowflake.addEventListener("animationend", () => {
+                    snowflake.remove();
+                });
+            }
+    
+            // Crear copos de nieve en intervalos regulares
+            setInterval(createSnowflake, 300);
+        </script> -->
+/*.body {
+    background-image: url(./imagenes/marcobonito.jpg), url(./imagenes/quince.jpg);
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, top;
+    min-height: 100vh;
+    overflow-x: hidden; /* Oculta el scroll horizontal 
+    margin: 40px;
+    position: relative;
+}
+
+/* Contenedor de nieve para que no afecte el scroll 
+.snow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 9999; /* Encima del contenido pero no afecta la interacción 
+}
+
+/* Estilos para los copos de nieve 
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: rgb(255, 255, 255);
+    font-size: .01em;
+    opacity: 0.1;
+    animation: fall ease-in-out normal;
+}
+
+/* Animación de caída */
+/* @keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+} */
