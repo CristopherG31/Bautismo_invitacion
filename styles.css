@@ -16,7 +16,7 @@
     font-family: "Updock", cursive;
     font-weight: 800;
     color: rgb(52, 117, 56);
-    font-size: 3vw; /* Usar vw para hacer la fuente más responsiva */
+    font-size: 5vw; /* Usar vw para hacer la fuente más responsiva */
     display: flex;
     flex-direction: column; /* Cambia a columna */
     align-items: center; /* Alinea al centro */
