@@ -86,6 +86,16 @@
     display: inline-block;
     font-size: 6vh;
 }
+.button2 {
+    background-color: #2c4a2c; /* verde esmeralda */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px 0;
+    display: inline-block;
+    font-size: 3vh;
+}
 button:hover{
     transform: scale(1.05);
     color: rgb(34, 86, 37);
